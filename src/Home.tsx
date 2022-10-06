@@ -1,4 +1,5 @@
-import { Box } from '@mui/material';
+import { Box, Divider } from '@mui/material';
+import Split from './components/Split';
 import Stack from './components/Stack';
 
 function Home() {
@@ -8,6 +9,12 @@ function Home() {
         <Box sx={{ height: '36px', background: 'red' }}></Box>
         <Box sx={{ height: '36px', background: 'red' }}></Box>
       </Stack>
+
+      <Divider sx={{ my: 4 }} />
+
+      <Split gutter={3} fraction="2/3">
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+      </Split>
     </Box>
   );
 }
