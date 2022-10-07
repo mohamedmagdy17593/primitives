@@ -1,5 +1,7 @@
 import { Box, Divider } from '@mui/material';
 import Columns from './components/Columns';
+import Grid from './components/Grid';
+import InlineCluster from './components/InlineCluster';
 import Split from './components/Split';
 import Stack from './components/Stack';
 
@@ -39,6 +41,29 @@ function Home() {
           <Box sx={{ height: '36px', background: 'red' }}></Box>
         </Columns.Column>
       </Columns>
+
+      <Divider sx={{ my: 4 }} />
+
+      <Grid gutter={3} minItemWidth={'200px'}>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+      </Grid>
+
+      <Divider sx={{ my: 4 }} />
+
+      <InlineCluster sx={{ p: 2, border: '1px solid black' }} gutter={2}>
+        <Box>Home</Box>
+        <Box>About</Box>
+        <Box>Cool</Box>
+        <Box>Name</Box>
+      </InlineCluster>
     </Box>
   );
 }
