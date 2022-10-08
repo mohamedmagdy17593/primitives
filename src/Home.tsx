@@ -4,6 +4,7 @@ import Grid from './components/Grid';
 import InlineCluster from './components/InlineCluster';
 import Split from './components/Split';
 import Stack from './components/Stack';
+import Inline from './components/Inline';
 
 function Home() {
   return (
@@ -64,6 +65,15 @@ function Home() {
         <Box>Cool</Box>
         <Box>Name</Box>
       </InlineCluster>
+
+      <Divider sx={{ my: 4 }} />
+
+      <Inline sx={{ p: 2, border: '1px solid black' }} gutter={2}>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+        <Box sx={{ height: '36px', background: 'red' }}></Box>
+      </Inline>
     </Box>
   );
 }
